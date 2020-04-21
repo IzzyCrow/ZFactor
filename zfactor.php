@@ -19,6 +19,8 @@ body {
 <?php
 function Zfactor( $lat ) {
 
+// Formula derived from https://support.esri.com/en/technical-article/000007956
+
 if ($lat <= -90 OR $lat >= 90 OR is_numeric($lat) == false) {
 print "<p> Not a valid latitude.  Latitude must be between -90 & 90 Degrees </p>";
 } Else {
